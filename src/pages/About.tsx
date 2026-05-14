@@ -16,7 +16,7 @@ export default function About() {
           >
             <span className="text-brand font-bold tracking-widest text-sm uppercase mb-4 block">{about.hero.badge}</span>
             <h1 className="text-5xl md:text-7xl font-black mb-10 tracking-tighter text-dark">{about.hero.title} <br /><span className="text-dark/20">{about.hero.titleAccent}</span></h1>
-            <p className="text-xl md:text-2xl text-dark/60 max-w-3xl leading-relaxed">
+            <p className="text-xl md:text-2xl text-dark/60 max-w-3xl leading-relaxed whitespace-pre-line">
               {about.hero.subCopy}
             </p>
           </motion.div>

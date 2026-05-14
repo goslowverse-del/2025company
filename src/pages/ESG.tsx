@@ -11,7 +11,7 @@ export default function ESG() {
         <div className="max-w-4xl mx-auto">
           <span className="text-brand font-bold tracking-widest text-sm uppercase mb-4 block">{esg.hero.badge}</span>
           <h1 className="text-5xl md:text-7xl font-black mb-10 tracking-tighter text-dark">{esg.hero.title} <br /><span className="text-brand">{esg.hero.titleAccent}</span></h1>
-          <p className="text-xl text-dark/50 leading-relaxed max-w-2xl mx-auto">
+          <p className="text-xl text-dark/50 leading-relaxed max-w-2xl mx-auto whitespace-pre-line">
             {esg.hero.subCopy}
           </p>
         </div>

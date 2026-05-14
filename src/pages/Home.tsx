@@ -31,7 +31,7 @@ export default function Home() {
               {home.hero.title} <br />
               <span className="text-gradient">{home.hero.titleAccent}</span>
             </h1>
-            <p className="text-lg md:text-xl text-dark/60 mb-12 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl text-dark/60 mb-12 max-w-3xl mx-auto leading-relaxed whitespace-pre-line">
               {home.hero.subCopy}
             </p>
             <div className="flex flex-col md:flex-row gap-4 justify-center">
