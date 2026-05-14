@@ -33,12 +33,12 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-dark/80 backdrop-blur-md border-b border-white/10 py-4' : 'bg-transparent py-6'
+        isScrolled ? 'bg-white/80 backdrop-blur-md border-b border-dark/5 py-4' : 'bg-transparent py-6'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-        <Link to="/" className="text-2xl font-bold tracking-tighter hover:text-brand transition-colors">
-          2025<span className="text-brand">company</span>
+        <Link to="/" className="text-2xl font-bold tracking-tighter hover:text-brand transition-colors text-dark">
+          2025 <span className="text-brand">company</span>
         </Link>
 
         {/* Desktop Menu */}
@@ -47,8 +47,8 @@ export default function Navbar() {
             <Link
               key={item.path}
               to={item.path}
-              className={`text-sm font-medium tracking-wide transition-colors hover:text-brand ${
-                location.pathname === item.path ? 'text-brand' : 'text-white/70'
+              className={`text-sm font-bold tracking-wide transition-colors hover:text-brand ${
+                location.pathname === item.path ? 'text-brand' : 'text-dark/60'
               }`}
             >
               {item.name}
@@ -56,7 +56,7 @@ export default function Navbar() {
           ))}
           <Link
             to="/contact"
-            className="bg-brand text-white px-5 py-2.5 rounded-full text-sm font-bold hover:bg-brand/90 transition-all active:scale-95"
+            className="bg-brand text-white px-5 py-2.5 rounded-full text-sm font-bold hover:bg-brand/90 transition-all active:scale-95 shadow-lg shadow-brand/20"
           >
             문의하기
           </Link>
@@ -64,7 +64,7 @@ export default function Navbar() {
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden text-white p-2"
+          className="md:hidden text-dark p-2"
           onClick={() => setIsOpen(!isOpen)}
           id="mobile-menu-toggle"
         >
@@ -79,14 +79,14 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="absolute top-full left-0 w-full bg-dark border-b border-white/10 flex flex-col items-center py-10 space-y-8 md:hidden"
+            className="absolute top-full left-0 w-full bg-white border-b border-dark/5 flex flex-col items-center py-10 space-y-8 md:hidden shadow-xl"
           >
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
-                className={`text-lg font-semibold ${
-                  location.pathname === item.path ? 'text-brand' : 'text-white'
+                className={`text-lg font-bold ${
+                  location.pathname === item.path ? 'text-brand' : 'text-dark'
                 }`}
               >
                 {item.name}

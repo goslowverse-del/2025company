@@ -14,16 +14,16 @@
 
 @layer base {
   body {
-    @apply bg-dark text-white font-sans antialiased selection:bg-brand selection:text-white;
+    @apply bg-white text-dark font-sans antialiased selection:bg-brand selection:text-white;
   }
 }
 
 .glass-morphism {
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(0, 0, 0, 0.03);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .text-gradient {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500;
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-dark to-gray-500;
 }
