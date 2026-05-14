@@ -24,7 +24,7 @@ export const COPY = {
     aboutSub: "우리는 단순히 현재에 안주하지 않습니다. 미래를 내다보는 통찰력과 과감한 실행력으로 파트너의 비즈니스가 시장을 선도할 수 있도록 끊임없이 도전합니다.",
     expertise: {
       badge: "Core Innovations",
-      title: "아이디어의 탄생부터 시장의 안착까지.",
+      title: "아이디어의 탄생부터 \n시장의 안착까지.",
       subCopy: "전략적 혁신 컨설팅부터 디지털 트랜스포메이션, 창의적 유통과 마케팅까지 비즈니스 전 과정에 걸친 통합 혁신을 제공합니다.",
       items: [
         { id: '01', title: 'Strategy Innovation', desc: '시장의 판도를 바꾸는 혁신적인 비즈니스 모델과 전략을 설계합니다.' },

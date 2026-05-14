@@ -107,7 +107,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 gap-8">
             <div className="max-w-3xl">
               <span className="text-brand font-bold tracking-widest text-xs uppercase mb-4 block">{home.expertise.badge}</span>
-              <h2 className="text-4xl md:text-6xl font-black mb-6 text-dark">{home.expertise.title}</h2>
+              <h2 className="text-4xl md:text-6xl font-black mb-6 text-dark whitespace-pre-line">{home.expertise.title}</h2>
               <p className="text-dark/40 text-lg leading-relaxed">{home.expertise.subCopy}</p>
             </div>
             <Link to="/business" className="hidden md:block text-dark/40 hover:text-dark transition-all text-sm font-bold flex items-center gap-2">
@@ -136,7 +136,7 @@ export default function Home() {
       <section className="py-40 px-6 bg-slate-50 border-y border-dark/5 overflow-hidden">
         <div className="max-w-7xl mx-auto text-center">
           <Link to="/contact" className="inline-block px-12 py-5 bg-brand text-white font-bold rounded-full hover:scale-105 transition-transform active:scale-95 shadow-lg shadow-brand/20">
-            신뢰와 혁신을 함께할 파트너십 제안하기
+            파트너십 제안하기
           </Link>
         </div>
       </section>
