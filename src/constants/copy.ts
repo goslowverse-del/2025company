@@ -59,7 +59,7 @@ export const COPY = {
       badge: "About Innovation",
       title: "한계를 뛰어넘는 도전,",
       titleAccent: "혁신의 중심에 서다.",
-      subCopy: "우리는 세상에 없던 가치를 창조하고, /n파트너의 성공을 위해 가장 앞선 솔루션을 제공하는 혁신 기업입니다.",
+      subCopy: "우리는 세상에 없던 가치를 창조하고, \n파트너의 성공을 위해 가장 앞선 솔루션을 제공하는 혁신 기업입니다.",
     },
     overview: {
         title: "회사 개요",
