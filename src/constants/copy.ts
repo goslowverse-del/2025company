@@ -77,12 +77,6 @@ export const COPY = {
       { title: 'Sustainability', desc: '일회성 성과가 아닌, 지속 가능한 성장 구조를 함께 설계합니다.' },
       { title: 'Partnership', desc: '함께 고민하고 함께 나아가는 진정한 협력의 가치를 실현합니다.' },
     ],
-    history: [
-      { year: '2025', title: 'Global Expansion', desc: '글로벌 파트너십 네트워크 확장' },
-      { year: '2023', title: 'Digital Innovation', desc: '디지털 솔루션 생태계 구축' },
-      { year: '2021', title: 'Strategic Leadership', desc: '비즈니스 전략 컨설팅 부문 강화' },
-      { year: '2020', title: 'Founding', desc: '2025 company 설립' },
-    ]
   },
   business: {
     hero: {

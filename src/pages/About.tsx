@@ -73,23 +73,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* History - SOFT DARK */}
-      <section className="py-40 px-6 bg-slate-900">
-         <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-6xl font-black mb-24 text-center text-white">History</h2>
-            <div className="relative border-l-2 border-brand/20 pl-8 ml-4 space-y-16">
-               {about.history.map((item, idx) => (
-                 <div key={idx} className="relative">
-                    <div className="absolute -left-[43px] top-0 w-5 h-5 rounded-full bg-brand border-4 border-slate-900 shadow-[0_0_20px_rgba(79,70,229,0.3)]"></div>
-                    <div className="text-2xl font-black text-brand mb-2">{item.year}</div>
-                    <h4 className="text-xl font-bold mb-2 text-white">{item.title}</h4>
-                    <p className="text-slate-400 leading-relaxed">{item.desc}</p>
-                 </div>
-               ))}
-            </div>
-         </div>
-      </section>
-
     </div>
   );
 }
