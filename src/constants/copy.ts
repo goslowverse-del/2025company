@@ -22,7 +22,7 @@ export const COPY = {
     aboutSub: "현재에 안주하지 않습니다. 미래를 내다보는 통찰력과 과감한 실행력으로, 시장을 선도할 수 있도록 끊임없이 도전합니다.",
     expertise: {
       badge: "Core Innovations",
-      title: "비즈니스의 가능성을\n재정의합니다.",
+      title: "최적의 솔루션으로\n성장을 가속화합니다.",
       subCopy: "전략 컨설팅부터 디지털 전환, 글로벌 유통, 브랜드 디자인과 마케팅까지 — 통합 비즈니스 솔루션을 제공합니다.",
       items: [
         { id: '01', title: 'Strategy Innovation', desc: '시장의 흐름을 읽고, 경쟁 우위를 확보할 수 있는 성장 전략을 설계합니다.' },

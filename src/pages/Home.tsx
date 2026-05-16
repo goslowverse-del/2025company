@@ -128,18 +128,23 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ESG Preview & Partners - SOFT LIGHT GROUPED */}
-      <section className="py-40 px-6 bg-white border-y border-slate-200">
-        <div className="max-w-7xl mx-auto">
+      {/* ESG Preview & Partners - DARK THEME */}
+      <section className="py-40 px-6 bg-slate-900 border-y border-white/5 relative overflow-hidden">
+        {/* Subtle background glow */}
+        <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
+          <div className="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-1/2 w-96 h-96 bg-brand/10 rounded-full blur-[128px]"></div>
+        </div>
+
+        <div className="max-w-7xl mx-auto relative z-10">
           {/* ESG Header */}
           <div className="flex flex-col lg:flex-row gap-20 mb-32 items-center">
             <div className="lg:w-1/3">
                <span className="text-brand font-bold tracking-widest text-xs uppercase mb-4 block">{home.esg.badge}</span>
-               <h2 className="text-4xl md:text-5xl font-black mb-8 leading-tight text-slate-900">{home.esg.title}</h2>
-               <p className="text-slate-500 leading-relaxed mb-10 whitespace-pre-line text-lg">
+               <h2 className="text-4xl md:text-5xl font-black mb-8 leading-tight text-white">{home.esg.title}</h2>
+               <p className="text-slate-400 leading-relaxed mb-10 whitespace-pre-line text-lg">
                   {home.esg.subCopy}
                </p>
-               <Link to="/esg" className="inline-block px-10 py-4 rounded-full border border-slate-200 font-bold hover:bg-slate-900 hover:text-white transition-all text-slate-900">
+               <Link to="/esg" className="inline-block px-10 py-4 rounded-full border border-white/20 text-white font-bold hover:bg-white hover:text-slate-900 transition-all">
                   자세히 보기
                </Link>
             </div>
@@ -147,22 +152,22 @@ export default function Home() {
                {home.esg.items.map((esg, idx) => {
                  const emojis = ['🌿', '🤝', '🏛️'];
                  return (
-                    <div key={idx} className="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:bg-white transition-all shadow-sm hover:shadow-lg">
-                      <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-2xl mb-6 shadow-sm">{emojis[idx]}</div>
-                      <h4 className="text-xl font-bold mb-4 text-slate-900">{esg.label}</h4>
-                      <p className="text-slate-500 text-sm leading-relaxed">{esg.desc}</p>
+                    <div key={idx} className="p-8 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all shadow-sm">
+                      <div className="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center text-2xl mb-6 shadow-sm">{emojis[idx]}</div>
+                      <h4 className="text-xl font-bold mb-4 text-white">{esg.label}</h4>
+                      <p className="text-slate-400 text-sm leading-relaxed">{esg.desc}</p>
                     </div>
                  );
                })}
             </div>
           </div>
 
-          <div className="h-px bg-slate-100 mb-32"></div>
+          <div className="h-px bg-white/10 mb-32"></div>
 
           {/* Partners Call to Action */}
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-6xl font-black mb-8 text-slate-900">{home.partners.title}</h2>
-            <p className="text-slate-500 text-lg mb-12 whitespace-pre-line leading-relaxed">
+            <h2 className="text-4xl md:text-6xl font-black mb-8 text-white">{home.partners.title}</h2>
+            <p className="text-slate-400 text-lg mb-12 whitespace-pre-line leading-relaxed">
               {home.partners.subCopy}
             </p>
             <Link to="/contact" className="inline-block px-12 py-5 bg-brand text-white font-bold rounded-full hover:scale-105 transition-transform active:scale-95 shadow-lg shadow-brand/20">
